@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1280px;
+	margin: 0 auto;
+	background: linear-gradient(90deg, #628e75, #1a4855);
+}
+
+.header-container {
+	width: 100%;
+	height: 8rem;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navigation-container ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	gap: 2rem;
+}
+
+.hero-container {
+	display: flex;
+	align-items: center;
+	margin-top: 5rem;
+	height: calc(100% - 8rem);
+	color: #fff;
+}
+
+.text-content h2 {
+	font-size: 1.25rem;
+	letter-spacing: 0.375rem;
+	margin-bottom: 0.875rem;
+}
+
+.text-content h1 {
+	font-size: 4.25rem;
+	line-height: 109%;
+	font-weight: 900;
+	margin-bottom: 1.5rem;
+}
+
+.text-content p {
+	line-height: 180%;
+	max-width: 410px;
+	margin-bottom: 2.875rem;
+}
+
+.cta {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.cta a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.cta-a-1 {
+	background-color: #658e76;
+	padding: 0.5rem 2rem;
+	border: 2px solid #658e76;
+	transform: skew(-21deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cta-a-1 span,
+.cta-a-2 span,
+.cta-image {
+	transform: skew(21deg);
+}
+
+.cta-image {
+	margin-right: 0.5rem;
+}
+
+.cta-a-2 {
+	border: 2px solid #658e76;
+	padding: 0.5rem 2rem;
+	transform: skew(-21deg);
+}
+
+@media screen and (max-width: 360px) {
+	html {
+		overflow-x: hidden;
+	}
+
+	body {
+		max-width: 340px;
+	}
+
+	.header-container nav ul {
+		gap: 1.5rem;
+	}
+
+	.header-container nav ul img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.hero-container {
+		flex-direction: column-reverse;
+	}
+
+	.hero-content {
+		position: relative;
+	}
+
+	.image-content img {
+		position: absolute;
+		width: 350px;
+		height: auto;
+		top: 70px;
+		right: 0;
+	}
+
+	.text-content {
+		margin-top: 10rem;
+	}
+
+	.text-content h2 {
+		font-size: 1.125rem;
+	}
+
+	.text-content h1 {
+		font-size: 3.5rem;
+	}
+
+	.text-content p {
+		font-size: 0.875rem;
+	}
+
+	.cta-a-2 {
+		display: none;
+	}
+}
